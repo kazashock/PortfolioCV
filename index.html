@@ -87,7 +87,7 @@
     font-size:clamp(2.4rem,5vw,3.4rem);
     font-weight:800;line-height:1.1;margin-bottom:14px;
   }
-  .hero-text h1 .c1{color:var(--teal);}
+  .hero-text h1 .c1{color:#1E3A8A;}
   .hero-text h1 .c2{color:var(--navy);}
   .hero-role{
     font-size:1.15rem;color:var(--muted);font-weight:500;margin-bottom:22px;
@@ -162,13 +162,19 @@
 
   /* SKILLS */
   .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;}
+  .skill-card{
+    background:linear-gradient(135deg,var(--navy),var(--navy-soft));
+    border:none;color:#fff;box-shadow:0 6px 18px rgba(15,23,42,0.12);
+  }
+  .skill-card .card-icon{background:rgba(255,255,255,0.12);color:var(--teal-soft);}
+  .skill-card h3{color:#fff;}
   .skill-card ul{margin-top:6px;}
   .skill-card li{
-    font-size:.93rem;color:#475569;padding:4px 0;
-    border-bottom:1px dashed var(--border);
+    font-size:.93rem;color:#dbeafe;padding:4px 0;
+    border-bottom:1px dashed rgba(255,255,255,0.16);
   }
   .skill-card li:last-child{border-bottom:none;}
-  .skill-card li b{color:var(--navy);}
+  .skill-card li b{color:#fff;}
 
   /* PROYECTOS */
   .project-card{
@@ -295,7 +301,7 @@
   <div class="hero-inner">
     <div class="hero-text">
       <h1><span class="c1">Claudio</span> <span class="c2">Maidana Difranco</span></h1>
-      <p class="hero-role">QA Engineer Senior &middot; Automatizaci&oacute;n &amp; Ingenier&iacute;a de Calidad &middot; +5 a&ntilde;os de experiencia</p>
+      <p class="hero-role">QA Engineer Senior &middot; Automatizaci&oacute;n &amp; Ingenier&iacute;a de Calidad &middot; Amplia trayectoria profesional</p>
       <p class="hero-bio">
         Especialista en <b>testing manual y automatizado</b>, con foco en <b>automatizaci&oacute;n E2E con Playwright y Cypress</b>,
         validaci&oacute;n de APIs y estrategias <b>Shift-Left</b>. Actualmente lidero la adopci&oacute;n de <b>IA generativa
@@ -342,7 +348,7 @@
     </div>
     <div class="about-text">
       <p>
-        Soy <b>QA Engineer Senior</b> con m&aacute;s de 5 a&ntilde;os de experiencia dise&ntilde;ando estrategias de calidad y
+        Soy <b>QA Engineer Senior</b> con amplia trayectoria dise&ntilde;ando estrategias de calidad y
         frameworks de automatizaci&oacute;n en industrias tan distintas como banca, e-commerce, log&iacute;stica y agro-fintech.
         Mi enfoque combina rigor t&eacute;cnico con pensamiento estrat&eacute;gico: no solo valido que el software funcione,
         sino que dise&ntilde;o los procesos para que la calidad se integre desde el inicio del ciclo de desarrollo (Shift-Left).
@@ -449,7 +455,7 @@
       <ul>
         <li><b>E2E:</b> Playwright (TypeScript), Cypress, Selenium (Python)</li>
         <li><b>API:</b> Postman, SoapUI, PactumJS</li>
-        <li><b>No funcional:</b> Performance (JMeter), Seguridad</li>
+        <li><b>No funcional:</b> Performance (K6, JMeter), Seguridad (Pentesting)</li>
       </ul>
     </div>
 
@@ -459,8 +465,8 @@
       </div>
       <h3>Programaci&oacute;n y Datos</h3>
       <ul>
-        <li><b>Lenguajes:</b> JavaScript, TypeScript, Python</li>
-        <li><b>Bases de datos:</b> SQL Server, MySQL, Oracle, NoSQL</li>
+        <li><b>Lenguajes:</b> JavaScript, TypeScript, Java, Python</li>
+        <li><b>Bases de datos:</b> SQL Server, MySQL, Oracle, NoSQL (MongoDB, PostgreSQL, DynamoDB)</li>
       </ul>
     </div>
 
@@ -471,6 +477,7 @@
       <h3>Herramientas y Metodolog&iacute;as</h3>
       <ul>
         <li><b>Gesti&oacute;n:</b> Jira, ClickUp, Azure DevOps, Git</li>
+        <li><b>Plugins Jira:</b> Xray, Zephyr, QMetry</li>
         <li><b>M&eacute;todos:</b> Scrum, BDD (Gherkin), Shift-Left</li>
         <li><b>CI/CD:</b> GitHub Actions</li>
       </ul>
